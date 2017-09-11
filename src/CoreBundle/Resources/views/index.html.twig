@@ -1,0 +1,229 @@
+{% extends 'CoreBundle::layout.html.twig' %}
+{% block body %}
+    {#<div class="main container-fluid">#}
+    {#<div clas="row">#}
+    {#<div class="col-xs-12">#}
+    {#<img style="width:100%; height:auto;" src="{{ asset('bundles/core/images/banniere.png') }}" alt="logo">#}
+    {#</div>#}
+    {#<div class="col-xs-12">#}
+    {#<div class="navbar">#}
+    {#</div>#}
+    {#</div>#}
+    {#</div>#}
+    {#</div>#}
+
+    <div class="main container">
+        <div id="fixed-top">
+            <div style="text-align:center; border: 1px solid #F8D26F; margin-bottom: 25px; margin-top:15px">
+                <h1 style="margin-bottom:45px">Nelly LE LU - Praticienne en psychothérapie</h1>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p>
+                            Consultations sur RDV<br/>
+                            0608336454
+                        </p>
+                    </div>
+                    <div class="col-xs-6">
+                        <p>
+                            10, rue de Rennes<br/>
+                            35590 L'HERMITAGE<br/>
+                            nellyleroch56@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand visible-xs" href="#">Menu</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">APPROCHES ET ORIENTATIONS</a></li>
+                            <li><a href="#">POUR QUI? QUAND?</a></li>
+                            <li><a href="#">DEROULEMENT D'UNE SEANCE</a></li>
+                            <li><a href="#">CONTACT ET PLAN</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Etudes et orientation</h2>
+                <h3>Psychologie et neurosciences affectives et sociales</h3>
+                <p>
+                    Diplômée en psychologie clinique de l'école EPC d'Aix en Provence, cette école, d'orientation
+                    Jungienne forme (entre autres), ses élèves à la pratique de la psychothérapie.<br/><br/>
+                    Puisant ses sources au coeur de l'enseignement
+                    Freudien, l'EPC s'appuie également sur les oeuvres et les travaux de Carl Gustave JUNG. Nous pouvons
+                    juger de l'extrême bienveillance de ce dernier et de son regard porté sur la psychothérapie
+                    lorsqu'il écrivait:<br/>
+                </p>
+            </div>
+        </div>
+        <div class="row bloc-citation">
+            <div class="col-xs-12 col-md-8 container-citation">
+                <div class="citation">
+                    <span>"Autant que je puisse en juger, le seul but de l'existence humaine est d'allumer une lumière dans
+                        l'obscurité de l'être."</span> Carl Gustave JUNG
+                </div>
+            </div>
+            <div class="col-md-1 col-xs-3"></div>
+            <div class="col-md-2 col-xs-6 ">
+                <img class="img-responsive" src="{{ asset('bundles/core/images/jung.jpg') }}" alt="jung">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    Notre formation répond à trois axes majeurs , soutenus et enseignés par l'EPC et définis comme suit:
+                </p>
+                <ul>
+                    <li>La théorie, cette dernière tenant en un enseignement riche et approfondi en psychologie
+                        clinique. Au
+                        coeur de cet enseignement théorique, nous retrouvons l'étude de la psychopathologie, la
+                        connaissance
+                        des tecnhiques de l'entretien, les soubassements et origines de la psychologie... Cet aspect
+                        théorique est accompagné de séminaires nous formant à la pratique de l'entretien, riches et
+                        porteurs, ces séminaires sont obligatoires.
+                    </li>
+                    <li>Suivre un processus psychothérapeutique personnel (On ne peut pas aider l'Autre, si soi-même on
+                        ne
+                        vas pas bien).
+                    </li>
+                    <li>Avoir un superviseur, cette démarche ,ous permet de nous appuyer sur un professionnel de
+                        confiance
+                        si nécessaire, et d'avoir un autre regard, sur notre mode de prise en charge et sur nous mêmes.
+                    </li>
+                </ul>
+                <p>
+                    Aujourd'hui, grâce aux neurosciences affectives et sociales, nous comprenons que notre cerveau est
+                    façonné par notre environnement. A ce sujet, Boris Cyrulnik écrit:<br/>
+                </p>
+            </div>
+        </div>
+        <div class="row bloc-citation">
+            <div class="col-xs-4 container-citation">
+                <div class="citation">
+                    <span>"La relation modifie la biologie..."</span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <img class="img-responsive" src="{{ asset('bundles/core/images/cerveau.jpg') }}" alt="jung">
+            </div>
+            <div class="col-xs-4 container-citation">
+                <div class="citation">
+                    <span>"La structure du cerveau dépend du contexte..."</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    Actuellement inscrite au CNAM, dans le but de suivre une formation en neurosciences adaptées au
+                    handicap(UE en cours de validation), mon travail au sein de mon cabinet s'appuie sur la nécessité
+                    d'unir
+                    les
+                    différents savoirs. Nous savons désormais comment l'environnement, la relation et le contexte
+                    peuvent modifier le
+                    développement de chacun d'entre nous.<br/><br/>
+                    Ainsi, tenant comtpe des facteurs qui construisent l'être, d'un point de vu biologique, neuronal,
+                    cérébral, psychologique, physique,...J'entends l'importance des fondements de l'entretien
+                    psychothérapeutique et tout ce qu'il renferme. Ce besoin d'écoute, de bienveillance, d'empathie et
+                    de non jugement sont les pistes fondamentales de mon exercice professionnel.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Pour qui?... Quand?...</h2>
+                <p>
+                    Pour les adultes, les adolescents et les enfants. <br/><br/>
+                    La psychothérapie répond au besoin d'aller mieux, vous vous sentez submergés par vos émotions, vos
+                    sentiments. Vous ressentez vos modes de fonctionnement comme invalidant pour vous et vos proches.
+                    Fragilisé(e) par un traumatisme, par une épreuve, une grande souffrance, seuls, vides, démunis, vous
+                    avez le sentiment de ne pas avoir de ressources internes suffisantes pour faire face seul(e).
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Déroulement d'une séance</h2>
+                <p>
+                    Chaque séance d'un durée de 1 heure reste unique et adaptée à vos besoins et à votre demande. La
+                    séance
+                    est un temps qui vous appartient, c'est votre espace et un lieu d'écoute.
+                    <br/><br/>
+                    Vous choisissez d'explorer et d'approcher votre problématique avec vos mots, vos émotions, vos
+                    ressentis, vos sentiments. Egalement à travers votre histoire, votre vécu, vos souvenirs, vos
+                    rêves...
+                    <br/><br/>
+                    Vous cheminez à votre rythme, dans le respect du temps lié au travail psychique. Parler ses
+                    souffrances, son mal être, ses difficultés quelles qu'elles soient, en prendre conscience, faire
+                    face à
+                    l'aide de mécanismes de défense, (coping) pour dépasser ses souffrances et leur donner un sens,
+                    c'est le
+                    but de la psychothérapie.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 50px">
+            <h2>Me contacter</h2>
+            <div class="col-xs-12 col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="inputName">Nom</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputFirstName">Prénom</label>
+                        <input type="text" class="form-control" id="inputFirstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPhone">Téléphone</label>
+                        <input type="text" class="form-control" id="inputPhone">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message:</label>
+                        <textarea class="form-control" rows="5" id="inputMessage"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+            <div class="col-sm-6 col-xs-12" id="map" style="height:420px; margin-bottom: 50px;margin-top:15px"></div>
+        </div>
+    </div>
+    <script>
+        function initMap() {
+            var uluru = {lat: 48.125595, lng: -1.817277};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwTeyv1ic2B4IoGG2XoRDeiIJWPO3uL1I&callback=initMap">
+    </script>
+{% endblock %}
