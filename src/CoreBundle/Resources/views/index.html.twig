@@ -1,20 +1,8 @@
 {% extends 'CoreBundle::layout.html.twig' %}
 {% block body %}
-    {#<div class="main container-fluid">#}
-    {#<div clas="row">#}
-    {#<div class="col-xs-12">#}
-    {#<img style="width:100%; height:auto;" src="{{ asset('bundles/core/images/banniere.png') }}" alt="logo">#}
-    {#</div>#}
-    {#<div class="col-xs-12">#}
-    {#<div class="navbar">#}
-    {#</div>#}
-    {#</div>#}
-    {#</div>#}
-    {#</div>#}
-
     <div class="main container">
         <div id="fixed-top">
-            <div style="text-align:center; border: 1px solid #F8D26F; margin-bottom: 25px; margin-top:15px">
+            <div style="text-align:center; border: 2px solid #F8D26F; margin-bottom: 25px; margin-top:15px">
                 <h1 style="margin-bottom:45px">Nelly LE LU - Praticienne en psychothérapie</h1>
                 <div class="row">
                     <div class="col-xs-6">
@@ -27,7 +15,7 @@
                         <p>
                             10, rue de Rennes<br/>
                             35590 L'HERMITAGE<br/>
-                            nellyleroch56@gmail.com
+                            nellylelu@gmail.com
                         </p>
                     </div>
                 </div>
@@ -60,6 +48,9 @@
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
+        {% for flash_message in app.session.flashBag.get('contact') %}
+            <p class="alert alert-success">{{ flash_message }}</p>
+        {% endfor %}
 
 
         <div class="row" id="section1">
@@ -196,7 +187,8 @@
                     </div>
                     <div class="form-group">
                         <label for="inputEmail">Email</label>
-                        <input type="email" class="form-control" name="mail" id="inputEmail" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" name="mail" id="inputEmail"
+                               aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
                         <label for="inputPhone">Téléphone</label>
@@ -227,13 +219,13 @@
 
         $(document).ready()
         {
-            $('.scrollToAnchor').click(function(){
-               scrollToAnchor($(this).attr('data-section'));
+            $('.scrollToAnchor').click(function () {
+                scrollToAnchor($(this).attr('data-section'));
             })
         }
 
         function scrollToAnchor(aid) {
-            var aTag = $('#'+aid);
+            var aTag = $('#' + aid);
             $('html,body').animate({scrollTop: aTag.offset().top}, 'slow');
         }
     </script>
