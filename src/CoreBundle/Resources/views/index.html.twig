@@ -49,10 +49,12 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">APPROCHES ET ORIENTATIONS</a></li>
-                            <li><a href="#">POUR QUI? QUAND?</a></li>
-                            <li><a href="#">DEROULEMENT D'UNE SEANCE</a></li>
-                            <li><a href="#">CONTACT ET PLAN</a></li>
+                            <li data-section="section1" class="scrollToAnchor"><a href="#">APPROCHES ET ORIENTATIONS</a>
+                            </li>
+                            <li data-section="section2" class="scrollToAnchor"><a href="#">POUR QUI? QUAND?</a></li>
+                            <li data-section="section3" class="scrollToAnchor"><a href="#">DEROULEMENT D'UNE SEANCE</a>
+                            </li>
+                            <li data-section="section4" class="scrollToAnchor"><a href="#">CONTACT ET PLAN</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -60,7 +62,7 @@
         </div>
 
 
-        <div class="row">
+        <div class="row" id="section1">
             <div class="col-xs-12">
                 <h2>Etudes et orientation</h2>
                 <h3>Psychologie et neurosciences affectives et sociales</h3>
@@ -148,7 +150,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="section2">
             <div class="col-xs-12">
                 <h2>Pour qui?... Quand?...</h2>
                 <p>
@@ -159,7 +161,7 @@
                     avez le sentiment de ne pas avoir de ressources internes suffisantes pour faire face seul(e).
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="section3">
             <div class="col-xs-12">
                 <h2>Déroulement d'une séance</h2>
                 <p>
@@ -180,29 +182,29 @@
                 </p>
             </div>
         </div>
-        <div class="row" style="margin-bottom: 50px">
+        <div class="row" id="section4" style="margin-bottom: 50px">
             <h2>Me contacter</h2>
             <div class="col-xs-12 col-sm-6">
-                <form>
+                <form method="post">
                     <div class="form-group">
                         <label for="inputName">Nom</label>
-                        <input type="text" class="form-control" id="inputName">
+                        <input type="text" class="form-control" name="name" id="inputName">
                     </div>
                     <div class="form-group">
                         <label for="inputFirstName">Prénom</label>
-                        <input type="text" class="form-control" id="inputFirstName">
+                        <input type="text" class="form-control" name="firstName" id="inputFirstName">
                     </div>
                     <div class="form-group">
                         <label for="inputEmail">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" name="mail" id="inputEmail" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
                         <label for="inputPhone">Téléphone</label>
-                        <input type="text" class="form-control" id="inputPhone">
+                        <input type="text" class="form-control" name="phone" id="inputPhone">
                     </div>
                     <div class="form-group">
                         <label for="inputMessage">Message:</label>
-                        <textarea class="form-control" rows="5" id="inputMessage"></textarea>
+                        <textarea class="form-control" rows="5" name="message" id="inputMessage"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>
@@ -221,6 +223,18 @@
                 position: uluru,
                 map: map
             });
+        }
+
+        $(document).ready()
+        {
+            $('.scrollToAnchor').click(function(){
+               scrollToAnchor($(this).attr('data-section'));
+            })
+        }
+
+        function scrollToAnchor(aid) {
+            var aTag = $('#'+aid);
+            $('html,body').animate({scrollTop: aTag.offset().top}, 'slow');
         }
     </script>
     <script async defer
