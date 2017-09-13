@@ -73,7 +73,13 @@ h2 {
 
 @media screen and (max-width: 768px) {
     #encadre {
-        height: 40vw;
+        height: 42vw;
         padding-top:0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #encadre {
+        height: 46vw;
     }
 }
