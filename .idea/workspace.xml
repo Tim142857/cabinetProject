@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c005f622-250b-4fff-ae55-ac2fe43d9c56" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/.gitkeep" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Resources/public/css/style.css" afterPath="$PROJECT_DIR$/src/CoreBundle/Resources/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Resources/views/index.html.twig" afterPath="$PROJECT_DIR$/src/CoreBundle/Resources/views/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/CoreBundle/Resources/views/layout.html.twig" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -35,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+            <state relative-caret-position="357">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -108,8 +105,8 @@
         <option value="$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/views/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Resources/public/css/style.css" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Resources/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -357,12 +354,12 @@
       <workItem from="1505295256034" duration="8111000" />
       <workItem from="1505305038573" duration="5620000" />
       <workItem from="1505377323984" duration="8205000" />
-      <workItem from="1506005413209" duration="138000" />
+      <workItem from="1506005413209" duration="236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49228000" />
+    <option name="totallyTimeSpent" value="49326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -763,14 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/views/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -783,6 +772,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding />
         </state>
       </provider>
